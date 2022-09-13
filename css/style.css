@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Thematic properties */
+:root {
+    --page-background-color: white;
+    --title-font-size: 55px;
+    --user-font-size: 30px;
+    --menu-font-size: 12px;
+    --sub-head-font-size: 18px;
+    --title-font-color: #3C3C3C;
+    --menu-font-color: #737373;
+    --button-back-color: #018093;
+    --button-txt-color: #FFFFFF;
+    --text-color: #7d7d7d;
+}
+
+
+@font-face {
+    font-family: 'TT_Travels_Next';
+    src: url('../fonts/TT_Travels_Next_Medium.ttf') format('TrueType'),
+        url('../fonts/TT_Travels_Next_Regular.ttf') format('TrueType'),
+        url('../fonts/TT_Travels_Next_Light.ttf') format('TrueType'),
+        url('../fonts/TT_Travels_Next_ExtraBold.ttf') format('TrueType'),
+        url("../fonts/TT_Travels_Next_Black.ttf") format('TrueType')
+}
+
+
+/* Common shared Properties */
+.container {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 10px 30px;
+}
+
+.btn-primary {
+    background-color: var(--button-back-color);
+    color: var(--button-txt-color);
+    font-weight: 600;
+    margin: 5px;
+    padding: 10px 30px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-round {
+    background-color: var(--button-back-color);
+    color: var(--button-txt-color);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* website visual part */
+body {
+    background-color: var(--page-background-color);
+    font-family: 'TT_Travels_Next';
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Navigation bar design*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    font-size: small;
+}
+
+.nav-logo {
+    margin: 10px;
+    padding: 10px;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu-list {
+    justify-content: center;
+}
+
+.nav-menu-list>ul>li {
+    list-style: none;
+    margin: 10px;
+    padding: 0 10px;
+    color: var(--menu-font-color);
+    cursor: pointer;
+
+}
+
+
+.main-contents {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    gap: 10px;
+    grid-template-rows: 70vh;
+
+}
+
+.main-contents>div {}
+
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    width: 90%;
+}
+
+.title-txt {
+    color: var(--title-font-color);
+    font-size: var(--title-font-size);
+    text-align: left;
+    margin-left: 18px;
+}
+
+.plus-Image {
+    align-self: flex-end;
+}
+
+.plus-Image img {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    width: 60%;
+}
+
+.trust-section h4 {
+    font-size: var(--sub-head-font-size);
+    margin-left: 18px;
+    color: var(--text-color);
+}
+
+.brand-logo {
+    display: flex;
+}
+
+.brand-logo img {
+    width: 50%;
+    align-items: center;
+    margin: 10px;
+    justify-items: flex-start;
+}
+
+.middle-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle-part>img {
+    width: 60%;
+}
+
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70vh;
+    width: 90%;
+}
+
+.right-side p {
+    color: var(--text-color);
+    font-size: small;
+    line-height: 30px;
+}
+
+.play-video {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.play-video p {
+    color: var(--text-color);
+    font-size: var(--sub-head-font-size);
+    padding: 10px;
+}
+
+.user-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-section {
+    font-size: var(--user-font-size);
+    font-weight: bold;
+}
+
+.total-user {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.total-user p {
+    color: var(--text-color);
+    font-size: var(--sub-head-font-size);
+    padding: 10px;
+}
+
+.total-user img {
+    width: 15%;
+}
+
+.users {
+    display: flex;
+    width: 140px;
+    align-items: center;
+}
+
+.user {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: relative;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.user:nth-child(1) {
+    left: 0px;
+}
+
+.user:nth-child(2) {
+    left: -15px;
+}
+
+.user:nth-child(3) {
+    left: -30px;
+}
+
+.user:nth-child(4) {
+    left: -45px;
+}
+
+.user:nth-child(5) {
+    left: -60px;
+    background-color: black;
+}
+
+.horizontal-divider {
+    height: 0px;
+    width: 98%;
+    border-top: 1px solid var(--menu-font-color);
+    margin-top: 20px;
+}
+
+.down-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.down-btn {
+    position: relative;
+    top: -20px;
+}
